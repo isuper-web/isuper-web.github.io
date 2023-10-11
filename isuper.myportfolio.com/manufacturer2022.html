@@ -1,0 +1,158 @@
+﻿<html>
+  <head>
+    <title>isuper - 廠商名冊</title>
+    <link rel="stylesheet" href="dist/css/alpaca.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <style>
+      a {
+        text-decoration: none;
+      }
+      
+      img#backgroundImage {
+        content: '';
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: .6;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+
+    <img id="backgroundImage"
+    src="../cdn.myportfolio.com/8185872f-399d-4b3f-9164-0a1caa61db8a/08d02440-952b-490f-91d8-7b6a834870a3_rwc_0x0x5616x3744x4096adb2.jpg?h=3eab19c687015401a41d731cd512a7d3">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; width: 100%; z-index: 99;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">廠商名冊</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="15fd9a8ff7ba38.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">商品資訊</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="new.html" tabindex="-1" aria-disabled="true">新品上市</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="discountsp.html" tabindex="-1" aria-disabled="true">優惠商品</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="manufacturer2022.html" tabindex="-1" aria-disabled="true">廠商名冊</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br><br>
+
+    <div style="opacity: .8;" class="position-relative overflow-hidden p-3 p-md-1 m-md-3 text-center bg-body-tertiary">
+      <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <h1 class="display-3 fw-bold">
+          廠商名冊</h1>
+        <h3 class="fw-normal text-muted mb-3">敬重感謝以下合作夥伴</h3>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <div class="ag-format-container">
+      <div class="ag-courses_box">
+
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg" style="background-color: #FFFFFF;"></div>
+            <div class="ag-courses-item_title">廠商名冊 01-10</div>
+            <ul class="ag-courses-item_content"> 
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
+            </ul>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+
+    <script>
+      String.prototype.formatUnicorn = String.prototype.formatUnicorn || function () {
+          "use strict";
+          var str = this.toString();
+          if(arguments.length) {
+              var t = typeof arguments[0];
+              var key;
+              var args = ("string" === t || "number" === t) ?
+                  Array.prototype.slice.call(arguments)
+                  : arguments[0];
+              for(key in args) { str = str.replace(new RegExp("\\{" + key + "\\}", "gi"), args[key]); }
+          }
+          return str;
+      };
+
+      const container = document.querySelector('div.ag-format-container div.ag-courses_box');
+      const template = `<div class="ag-courses_item">
+          <a href="{link}" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg" style="background-color: {color}"></div>
+            <div class="ag-courses-item_title">{title}</div>
+            <ul class="ag-courses-item_content"> 
+              {company_li}
+            </ul>
+          </a>
+        </div>`;
+        
+      let datas = [{
+        title: '廠商名冊 01-10',
+        companies: ['華陽', '禾掌屋', '西鹿', '吉鈴', '郁品', '君建', '霖寶', '中泰興',],
+        link: '#D63444',
+        color: '#DC3545'
+      },{
+        title: '廠商名冊 11-20',
+        companies: ['海可利','國運','博樂','上義','雅澤','順航','同勝','松寶','巧禮','愛備',],
+        link: '#',
+        color: '#F90068'
+      },{
+        title: '廠商名冊 21-30',
+        companies: ['益豐','威美','禮依藝','春金(笙樺)','惠暘','祥閎','金喜悅','萬兆','岱寬',],
+        link: '#',
+        color: '#3C2CF4'
+      },{
+        title: '廠商名冊 31-40',
+        companies: ['唐采','四季','杰暘','揚曜','宙傑','詮勝豪','上展',],
+        link: '#',
+        color: '#00A3B5'
+      },{
+        title: '廠商名冊 41-50',
+        companies: ['依利特','榮華','高菱','凱創','藝林','見樺',],
+        link: '#',
+        color: '#03C700'
+      },{
+        title: '廠商名冊 51-60',
+        companies: ['文生瑪莉亞','基財','松盈','信發行','錦富','傑作','總幹事',],
+        link: '#',
+        color: '#F07D03'
+      },]
+      let htmlEl = '';
+      datas.forEach(data => {
+        htmlEl += template.formatUnicorn({
+          title: data.title, 
+          company_li: "<li>" + data.companies.join('</li><li>') + "</li>",
+          link: data.link,
+          color: data.color
+        });
+      });
+      container.innerHTML = htmlEl;
+    </script>
+  </body>
+</html>
