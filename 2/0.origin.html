@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 基本卡片樣式 */
+        .card {
+            position: relative;
+            width: calc(33.33% - 2px);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            float: left;
+            transition: transform 0.3s;
+        }
+
+        /* 卡片背景圖片 */
+        .card-content {
+            background-image: url('https://source.unsplash.com/900x920');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+        }
+
+        /* 黑色遮罩效果 */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        /* 滑鼠懸停時，卡片放大效果並提高層級 */
+        .card:hover {
+            transform: scale(1.05);
+            z-index: 1;
+        }
+
+        /* 清單樣式 */
+        .card h2 {
+            margin: 0;
+        }
+
+        .card ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        .card ul li {
+            margin: 5px 0;
+        }
+
+        /* 媒體查詢: 手機上一行只顯示一個卡片 */
+        @media (max-width: 767px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <h2>廠商名冊</h2>
+            <ul>
+                <li>廠商 1</li>
+                <li>廠商 2</li>
+                <li>廠商 3</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <h2>廠商名冊</h2>
+            <ul>
+                <li>廠商 1</li>
+                <li>廠商 2</li>
+                <li>廠商 3</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <h2>廠商名冊</h2>
+            <ul>
+                <li>廠商 1</li>
+                <li>廠商 2</li>
+                <li>廠商 3</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <h2>廠商名冊</h2>
+            <ul>
+                <li>廠商 1</li>
+                <li>廠商 2</li>
+                <li>廠商 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 這裡可以放更多卡片 -->
+
+</body>
+</html>
