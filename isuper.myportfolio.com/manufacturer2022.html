@@ -168,7 +168,7 @@
       const container = document.querySelector('div#project-modules');
       const template = `<a href="{link}">
                           <div class="card">
-                            <div class="card-content">
+                            <div class="card-content" style="background-image: url('{image}')">
                                 <h2>{title}</h2>
                                 <ul>
                                   {company_li}
@@ -181,40 +181,49 @@
         title: '廠商名冊 01-10',
         companies: ['華陽', '禾掌屋', '西鹿', '吉鈴', '郁品', '君建', '霖寶', '中泰興',],
         link: '162e0c486edd4a.html',
-        color: '#DC3545'
+        color: '#DC3545',
+        image: 'images/01-10.jpg',
       },{
         title: '廠商名冊 11-20',
         companies: ['海可利','國運','博樂','上義','雅澤','順航','同勝','松寶','巧禮','愛備',],
         link: '01-10-4.html',
-        color: '#F90068'
+        color: '#F90068',
+        image: 'images/11-20.jpg',
       },{
         title: '廠商名冊 21-30',
         companies: ['益豐','威美','禮依藝','春金(笙樺)','惠暘','祥閎','金喜悅','萬兆','岱寬',],
         link: '01-10-3.html',
-        color: '#3C2CF4'
+        color: '#3C2CF4',
+        image: 'images/21-30.jpg',
       },{
         title: '廠商名冊 31-40',
         companies: ['唐采','四季','杰暘','揚曜','宙傑','詮勝豪','上展',],
         link: '01-10-2.html',
-        color: '#00A3B5'
+        color: '#00A3B5',
+        image: 'images/31-40.jpg',
       },{
         title: '廠商名冊 41-50',
         companies: ['依利特','榮華','高菱','凱創','藝林','見樺',],
         link: '01-10-1.html',
-        color: '#03C700'
+        color: '#03C700',
+        image: 'images/41-50.jpg',
       },{
         title: '廠商名冊 51-60',
         companies: ['文生瑪莉亞','基財','松盈','信發行','錦富','傑作','總幹事',],
         link: '01-10.html',
-        color: '#F07D03'
+        color: '#F07D03',
+        image: 'images/51-60.jpg',
       },]
       let htmlEl = '';
       datas.forEach(data => {
         htmlEl += template.formatUnicorn({
-          title: data.title, 
-          company_li: "<li>" + data.companies.join('</li><li>') + "</li>",
+          // title: data.title,
+          title: '',
+          // company_li: "<li>" + data.companies.join('</li><li>') + "</li>",
+          company_li: '',
           link: data.link,
-          color: data.color
+          // color: data.color,
+          image: data.image,
         });
       });
       container.innerHTML = htmlEl;

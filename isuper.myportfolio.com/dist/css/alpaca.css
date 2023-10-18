@@ -8,13 +8,16 @@ img#backgroundImage {
   text-align: right;
   /*  */
   background-color: rgba(0, 0, 0, .9);
-  background-blend-mode: multiply;  background-image: url(bg.jpg);
+  background-blend-mode: multiply;
+  background-image: url(bg.jpg);
   background-size: cover;
   background-position: center center;
 }
+
 a {
   text-decoration: none;
 }
+
 /* 基本卡片樣式 */
 .card {
   position: relative;
@@ -29,9 +32,9 @@ a {
 
 /* 卡片背景圖片 */
 .card-content {
-  background-image: url('https://source.unsplash.com/900x920');
   background-size: cover;
-  background-position: center;
+  background-position: left;
+  background-repeat: no-repeat;
   color: white;
   padding: 20px;
 }
