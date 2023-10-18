@@ -33,7 +33,7 @@ a {
 /* 卡片背景圖片 */
 .card-content {
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   color: white;
   padding: 20px;
