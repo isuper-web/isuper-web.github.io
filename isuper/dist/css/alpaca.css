@@ -9,7 +9,6 @@ img#backgroundImage {
   /*  */
   background-color: rgba(0, 0, 0, .9);
   background-blend-mode: multiply;
-  background-image: url(bg.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -21,7 +20,7 @@ a {
 /* 基本卡片樣式 */
 .card {
   position: relative;
-  #width: calc(33.33% - 2px);
+  /* width: calc(33.33% - 2px); */
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -30,7 +29,7 @@ a {
   transition: transform 0.3s;
   min-width: 360px;
   max-width: 380px;
-  #height: 440px;
+  /* height: 440px; */
 }
 
 /* 卡片背景圖片 */
